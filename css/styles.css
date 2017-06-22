@@ -24,7 +24,7 @@ nav{
 }
 
 .nav_link{
-    margin-right: 15px;
+    margin-right: 50px;
     display: inline-block;
     margin-top: 14px;
     text-decoration: none;
@@ -35,6 +35,46 @@ nav{
     color: #fff;
 }
 /**End Nav Styles**/
+
+/**Home Page Styles**/
+.slideshow_container{
+    background: white;
+    height: 500px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.slideshow{
+    background: black;
+    height:500px;
+    width: 975px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.slideshow_img{
+    height: 100%;
+    width: 100%;
+}
+/**End Home Page Styles**/
+
+/**About Page Styles**/
+.history{
+    margin: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tl_container{
+    height: 300px;
+    width: auto;
+    margin: 50px;
+}
+
+.tl_img{
+    height: 100%;
+    width: 100%;
+}
+/**End About Page Styles**/
 
 /**Contact Page Styles**/
 .form_container{

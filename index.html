@@ -25,7 +25,17 @@
     </nav>
     <!--End Nav-->
     
-    <p>Home</p>
+    <!--Start Content-->
+    <div class="slideshow_container">
+        <div class="slideshow">
+            <img src="images/switch.jpg" alt="Nintendo Switch" class="slideshow_img">
+            <img src="images/arms.jpg" alt="Arms" class="slideshow_img">
+            <img src="images/botw_2.jpg" alt="Legend of Zelda: Breath of the Wild" class="slideshow_img">
+            <img src="images/odyssey.jpg" alt ="Super Mario Odyssey" class="slideshow_img">
+            <img src="images/splatoon2.jpg" alt="Splatoon 2" class="slideshow_img">
+        </div>
+    </div>
+    <!--End Content-->
     
     <!--Start Footer-->
     <footer>
@@ -59,6 +69,22 @@
     </footer>
     <!--End Footer-->
     
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slideshow_img");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+                }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000);
+        }
+    </script>
     
 </body>
 </html>
